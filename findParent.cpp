@@ -1,3 +1,4 @@
+#include <vector>
 #include "RRT.h"
 
 int findParent(node randNode, std::vector<node> tree, int bound){

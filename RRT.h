@@ -33,5 +33,8 @@ float nodeDist(node node1, node node2);
 int findParent(node randNode, std::vector<node> tree, int bound);
 bool testConnection(node node1, node node2, std::vector<obstacle>& obstacles, int rastNum);
 std::vector<obstacle> createObstacles(int numObs, float minSide, float maxSide, int bound);
+std::vector<node> unwrap(searchResult lastRun, int goalNodeIndex);
+std::vector<node> unwrap(searchResult lastRun, int startNodeIndex, int goalNodeIndex);
+searchResult RRT(std::vector<obstacle>& obstacles, node xInit, node xGoal, float goalRad, int rastNum, int bound);
 
 #endif 
